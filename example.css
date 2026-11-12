@@ -1,0 +1,164 @@
+/*
+*{
+	border: 1px red solid;
+}
+*/
+#title {
+	background: #ffffff;
+	padding: 1rem;
+	border-radius: 8px;
+}
+p{color: rgb(255, 253, 253);
+text-align: center;
+}
+
+.card{
+	padding: 1rem;
+}
+
+h1{
+	size : 1px;
+	color: green;
+}
+
+.d1{
+	color: yellow;
+}
+
+#sentence1{
+	color: red;
+}
+
+
+nav a {
+	color: pink;
+}
+
+body{
+	background-color: grey;
+	border: 2px solid;
+	border-radius: 20px;
+	padding: 20px;
+	margin: 40px;
+}
+div{
+	/*background-color: powderblue; */
+	border: 0px solid;
+	padding: 5px;
+	margin: 5px;
+}
+
+.container {
+  display: flex;
+  background-color: DodgerBlue;
+  width:500px;
+  border-radius:20px;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "menu content"
+    "footer footer";
+  grid-template-columns: 2fr 4fr;
+  gap: 5px;
+  background-color: dodgerblue;
+  padding: 5px;
+}
+
+.container div {
+  background-color: white;
+  padding: 10px;
+}
+.container div.header {
+  grid-area: header;
+  text-align: center;
+}
+.container div.menu {
+  grid-area: menu;
+}
+.container div.content {
+  grid-area: content;
+}
+.container div.footer {
+  grid-area: footer;
+  text-align: center;  
+}
+
+/*
+.faculty{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+*/
+
+.bg1{
+	background-color: violet;
+}
+#msg{
+	background: #ffffff;
+	padding: 0rem;
+	border-radius: 8px;
+}
+
+p{
+	color: black;
+}
+:root{
+	--brand: #1d3a49;
+	--space: 1rem;
+}
+
+.btn{
+	background: var(--brand);
+	padding: var(--space);
+}
+
+img{
+	width: 25em;
+	height: 25em;
+	float: right;
+}
+
+ /*
+video{
+	width: 25em;
+	height: 25em;
+}
+*/
+
+p,h1,form{
+	text-align: center;
+}
+
+  .center-image {
+    display: block;       
+    margin: auto;       
+    max-width: 100%;      
+    height: auto;
+  }
+
+  .vid{
+	display: block;       
+    margin: auto;       
+    max-width: 50%;      
+    height: auto;
+  }
+
+.fixed-button {
+    width: 200px;
+    height: 60px;
+    font-size: 16px; 
+}
+
+#postNotices{
+	background: blue;
+	color: white;
+	padding: 1rem;
+	border: none;
+	border-radius: 8px;
+	margin-top: 10px;
+}

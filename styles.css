@@ -1,0 +1,172 @@
+*{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serifs;
+}
+
+
+#title {
+	background: #ffffff;
+	padding: 0.5rem;
+	border-radius: 8px;
+}
+p{color: rgb(0, 0, 0);
+	text-align: center;
+	/*font-size: 30px;*/
+}
+
+h1{color: rgb(0, 0, 0);
+	text-align: center;
+	/*font-size: 30px;*/
+}
+.card{
+	padding:1rem;
+	border-radius: 20px;
+}
+#top{
+	margin:0;
+}
+nav a{
+	color:rgb(224, 228, 11);
+}
+a:hover{
+	text-decoration: none;
+}
+ btn.primary{
+	 background:rgb(255, 0, 0);
+ }
+
+.card{
+	padding: 1rem;
+	text-align: center;
+}
+p, h3{
+	color: rgb(0, 0, 0);
+}
+
+#sentence1{
+	color:black;
+}
+nav a{
+	color:black;
+	
+}
+
+body{
+	background-color: rgb(255, 255, 255);
+	border: 5 px solid brown;
+	padding: 30px;
+	margin: 50px;
+}
+
+/*
+.bg1{
+	background-color: #18b33c;
+	border-radius: 50px;
+}
+*/
+
+a:hover{
+	text-decoration: underline;
+	font-size: 25px;
+}
+
+:root{
+	--brand: #1f7a5c;
+	--space: 1rem;
+}
+
+.btn {
+	background: var(--brand);
+	padding: var(--space);
+}
+
+/*
+#msg {
+	background: white;
+	border-radius: 8px;
+	min-height: 80px;
+}
+*/
+#msg{
+	background: #ffffff;
+	padding: 0rem;
+	border-radius: 8px;
+}
+
+img{
+	float: right;
+	margin-left: 15px;
+	width: 400px;
+	height: auto;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "menu content side"
+    "footer footer footer";
+  grid-template-columns: 1fr 3fr 1fr;
+  gap: 3px;
+  background-color: #355337;
+  padding: 5px;
+  border-radius: 10px;
+}
+.container div {
+  background-color: rgb(209, 213, 214);
+  padding: 10px;
+  border-radius: 20px;
+}
+.container div.header {
+  grid-area: header;
+  text-align: center;
+  border-radius: 30px;	
+}
+.container div.menu {
+  grid-area: menu;
+  border-radius: 20px;
+}
+.container div.content {
+  grid-area: content;
+  border-radius: 20px;
+}
+.container div.side {
+  grid-area: side;
+  border-radius: 20px;
+}
+.container div.footer {
+  grid-area: footer;
+  text-align: center;  
+  border-radius: 20px;
+}
+#campusId{
+	text-align: center;
+	color:black;
+}
+
+
+.faculty{
+	/*border-collapse: collapse;*/
+	display: flex;
+	/*flex-direction: column;*/
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+}
+
+
+.fixed-button {
+    width: 200px;
+    height: 60px;
+    font-size: 16px; 
+}
+
+#postNotices{
+	background: blue;
+	color: white;
+	padding: 0.75rem 1rem;
+	border: none;
+	border-radius: 8px;
+	margin-top: 10px;
+}

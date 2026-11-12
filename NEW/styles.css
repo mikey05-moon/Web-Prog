@@ -1,0 +1,60 @@
+.header{
+    background-color: green;
+    color: white;
+}
+
+.header img{
+    height: 50px;
+    width: 50px;
+}
+
+:root{
+	--brand: #1f7a5c;
+	--space: 1rem;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "nav nav"
+    "menu side"
+    "footer footer";
+  grid-template-columns: 1fr 3fr;
+  gap: 3px;
+  background-color: #ffffff;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+.in {
+  grid-area: menu;
+  border-radius: 20px;
+}
+
+.img {
+  grid-area: menu;
+  border-radius: 20px;
+}
+
+.container div {
+  background-color: rgb(209, 213, 214);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.container div.login {
+  grid-area: menu;
+  border-radius: 20px;
+}
+*/
