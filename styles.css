@@ -1,72 +1,203 @@
-*{
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serifs;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f2f2ef;
+  color: #222;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 24px;
+  background: #f7f8f8;
+  border-bottom: 2px solid #1f5d3a;
+  color: #1f5d3a;
+
+}
+
+.logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #ddd;
+}
+
+.name {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.navbar {
+  background: #f9f9f6;
+  padding: 12px 24px;
+  border-bottom: 1px solid #ccc;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #222;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  font-weight: 600;
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+  color: #1f5d3a;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 24px;
+}
+
+.login-box {
+ flex: 1 1 0;
+  min-width: 0;
+  max-width: 380px;
+  background: #fff;
+  border: 2px solid #1f5d3a;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.login-box h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  color: #1f5d3a;
+}
+
+.login-form {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 14px 12px;
+  align-items: center;
+}
+
+.login-form label {
+  font-weight: 600;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #888;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.login-form input:focus {
+  outline: 2px solid #c9a227;
+  border-color: #1f5d3a;
+}
+
+.buttons {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 8px;
+}
+
+.btn {
+  padding: 8px 24px;
+  border: 2px solid #1f5d3a;
+  border-radius: 4px;
+  background: #fff;
+  color: #1f5d3a;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  background: #1f5d3a;
+  color: #fff;
 }
 
 
-#title {
-	background: #ffffff;
-	padding: 0.5rem;
-	border-radius: 8px;
-}
-p{color: rgb(0, 0, 0);
-	text-align: center;
-	/*font-size: 30px;*/
-}
-
-h1{color: rgb(0, 0, 0);
-	text-align: center;
-	/*font-size: 30px;*/
-}
-.card{
-	padding:1rem;
-	border-radius: 20px;
-}
-#top{
-	margin:0;
-}
-nav a{
-	color:rgb(224, 228, 11);
-}
-a:hover{
-	text-decoration: none;
-}
- btn.primary{
-	 background:rgb(255, 0, 0);
- }
-
-.card{
-	padding: 1rem;
-	text-align: center;
-}
-p, h3{
-	color: rgb(0, 0, 0);
+.image-box {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 420px;
+  aspect-ratio: 1 / 1;
+  border: 2px solid #1f5d3a;
+  border-radius: 4px;
+  background: #e4e4df;
+  overflow: hidden;
 }
 
-#sentence1{
-	color:black;
-}
-nav a{
-	color:black;
-	
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-body{
-	background-color: rgb(255, 255, 255);
-	border: 5 px solid brown;
-	padding: 30px;
-	margin: 50px;
+.footer {
+  background: #1f5d3a;
+  color: #fff;
+  text-align: center;
+  padding: 12px;
+  font-size: 0.9rem;
 }
+
+@media (max-width: 800px) {
+  .content {
+    gap: 16px;
+    padding: 24px 12px;
+  }
+
+  .login-form {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+
+
+
+
 
 /*
-.bg1{
-	background-color: #18b33c;
-	border-radius: 50px;
+nav {
+    background-color: #ffffff;
+    padding: 10px 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    position: relative;
+    z-index: 5;
 }
-*/
 
-a:hover{
-	text-decoration: underline;
-	font-size: 25px;
+.header img{
+    height: 50px;
+    width: 50px;
 }
 
 :root{
@@ -74,99 +205,88 @@ a:hover{
 	--space: 1rem;
 }
 
-.btn {
-	background: var(--brand);
-	padding: var(--space);
-}
-
-/*
-#msg {
-	background: white;
-	border-radius: 8px;
-	min-height: 80px;
-}
-*/
-#msg{
-	background: #ffffff;
-	padding: 0rem;
-	border-radius: 8px;
-}
-
-img{
-	float: right;
-	margin-left: 15px;
-	width: 400px;
-	height: auto;
-	object-fit: cover;
-	border-radius: 10px;
-}
-
 .container {
   display: grid;
   grid-template-areas:
-    "header header header"
-    "menu content side"
-    "footer footer footer";
-  grid-template-columns: 1fr 3fr 1fr;
+    "header header"
+    "nav nav"
+    "menu side"
+    "footer footer";
+  grid-template-columns: 1fr 3fr;
   gap: 3px;
-  background-color: #355337;
+  background-color: #ffffff;
   padding: 5px;
   border-radius: 10px;
 }
+
+.login {
+    display: flex;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    width: 800px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #fafafa;
+}
+
+.login {
+    width: 100%;
+    padding: 12px;
+    background-color: #1a237e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.register {
+    width: 100%;
+    padding: 12px;
+    background-color: #1a237e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.img {
+  grid-area: menu;
+  border-radius: 20px;
+}
+
+.in {
+  grid-area: menu;
+  border-radius: 20px;
+}
+
+.img {
+  grid-area: menu;
+  border-radius: 20px;
+}
+
 .container div {
   background-color: rgb(209, 213, 214);
   padding: 10px;
   border-radius: 20px;
 }
-.container div.header {
-  grid-area: header;
-  text-align: center;
-  border-radius: 30px;	
-}
-.container div.menu {
+
+.container div.login {
   grid-area: menu;
   border-radius: 20px;
 }
-.container div.content {
-  grid-area: content;
-  border-radius: 20px;
-}
-.container div.side {
-  grid-area: side;
-  border-radius: 20px;
-}
-.container div.footer {
-  grid-area: footer;
-  text-align: center;  
-  border-radius: 20px;
-}
-#campusId{
-	text-align: center;
-	color:black;
-}
-
-
-.faculty{
-	/*border-collapse: collapse;*/
-	display: flex;
-	/*flex-direction: column;*/
-	justify-content: space-between;
-	align-items: center;
-	gap: 20px;
-}
-
-
-.fixed-button {
-    width: 200px;
-    height: 60px;
-    font-size: 16px; 
-}
-
-#postNotices{
-	background: blue;
-	color: white;
-	padding: 0.75rem 1rem;
-	border: none;
-	border-radius: 8px;
-	margin-top: 10px;
-}
+*/
