@@ -10,42 +10,44 @@
 </head>
 
 <body>
-    <header class="header"> <img src="dmmmsulogo.png" alt="DMMMSU Logo"> DMMMSU </header>
+    <header class="header">
+        <img src="dmmmsulogo.png" alt="DMMMSU Logo" class="logo">
+        <span class="name">DMMMSU</span>
+    </header>
 
-    <nav>
-        <a href="home.html"> Home </a>
-        <a href="aboutus.html"> About Us </a>
-        <a href="contactus.html"> Contact Us </a>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="home.html"> Home </a></li>
+            <li><a href="aboutus.html"> About Us </a></li>
+            <li><a href="contactus.html"> Contact Us </a></li>
+        </ul>
     </nav>
 
-    <div class="container">
-        <div class="login">
-            <main>
-                <form>
-                    <h3> LogIn Form </h3>
+    <div class="content">
+        <main class="login-box">
+            <h3> LogIn Form </h3>
+            <form action="#" method="post" class="login-form">
+                <div class="input">
                     <label> Username: </label>
                     <input type="text" name="Username" required> </input>
                     <label> Password: </label>
                     <input type="password" name="Password" required> </input>
+                </div>
 
-                    <button type="submit"> Log In </button>
-                    <button type="submit"> Register </button>
-                </form>
+                <div class="buttons">
+                    <button type="submit" class="btn"> Log In </button>
+                    <button type="submit" class="btn"> Register </button>
+                </div>
 
-                <div clss="img"></div>
-                <aside>
-
-                    <img src="image1.jfif" alt="image1" />
-
-        </div>
+            </form>
+        </main>
+        <aside class="image-box">
+            <img src="image1.jfif" alt="image1">
+        </aside>
     </div>
-
-    </aside>
 
     <div class="footer">
         <h4>Alright Reserved 2027</h4>
     </div>
-    </main>
 </body>
-
 </html>
