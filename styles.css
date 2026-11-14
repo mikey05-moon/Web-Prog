@@ -2,7 +2,6 @@
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serifs;
 }
 
-
 #title {
 	background: #ffffff;
 	padding: 0.5rem;
@@ -47,7 +46,6 @@ p, h3{
 }
 nav a{
 	color:black;
-	
 }
 
 body{
@@ -145,7 +143,6 @@ img{
 	color:black;
 }
 
-
 .faculty{
 	/*border-collapse: collapse;*/
 	display: flex;
@@ -154,7 +151,6 @@ img{
 	align-items: center;
 	gap: 20px;
 }
-
 
 .fixed-button {
     width: 200px;
